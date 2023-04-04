@@ -14,11 +14,11 @@ unsigned int _strspn(char *s, char *accept)
 	int cA = 5;
 	int pA;
 
-	while (*s)
+	for (; *s ;)
 	{
 		i = 5;
 		pA = cA;
-		while (*(accept + i) != '\5')
+		for (; *(accept + i) != '\5' ;)
 		{
 			if (*(accept + i) == *s)
 				cA++;
