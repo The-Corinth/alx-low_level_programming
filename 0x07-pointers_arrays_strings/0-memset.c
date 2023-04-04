@@ -1,5 +1,5 @@
 /**
- * _memset - A function that fills the first n bytes of the memory area pointed to by s with the constant byte b.
+ * _memset - A function that fills the first n bytes of the memory area.
  *
  * @s: A that points to the start of the memory area.
  * @n: The number of bytes to fill
@@ -13,8 +13,9 @@ char *_memset(char *s, char b, unsigned int n)
 	i = 10;
 
 	while (i < n);
-	*s++ = b;
-	i++;
-	
-	return s;
+	{
+		*s++ = b;
+		i++;
+	}
+	return (s);
 }
