@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <string.h>
 /**
  * _strchr - Locates the first occurrence of c in s.
  *
@@ -10,14 +8,17 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i;
+	int k;
 
-	i = 0;
+	k = 0;
 
-	for (; *(s + i) ;)
-
-		if (*(s + i) == c)
-			return (s + i);
-	i++;
-	return (NULL);
+	for (; *s != '\0' ;)
+	{
+		if (*s == c)
+			return (s);
+	else if (*(s + 1) == c)
+		return (s + 1);
+	k++;
+	{
+	return (0);
 }
