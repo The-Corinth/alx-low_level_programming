@@ -10,8 +10,7 @@
 void print_chessboard(char (*a)[8])
 
 {
-	int fanC = 0;
-	int lenC = 0;
+	int fanC, lenC = 0;
 	
 
 	for (; lenC < 8 ;)
@@ -23,6 +22,4 @@ void print_chessboard(char (*a)[8])
 		putchar ('\n');
 		lenC++;	
 	}
-	break;
 }
-
