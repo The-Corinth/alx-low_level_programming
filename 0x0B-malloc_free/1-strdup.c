@@ -3,6 +3,7 @@
 #include <string.h>
 /**
  * _strdup - returns a pointer to a newly allocated space in memory
+ * @str: string to be allocated memory in OS
  * Return: Null
  */
 char *_strdup(char *str)
