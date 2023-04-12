@@ -15,9 +15,9 @@ char *_strdup(char *str)
 		return (NULL); /*return null if the sring is NULL*/
 	if (str_dup == NULL)
 		return (NULL); /*Not enough memory*/
+	if (strcpy(str_dup, str))
+		return (str_dup); /*The original string is copied to duplicated string*/
 	if (strcpy(str_dup, str) == NULL)
 		free(str_dup);/* freeing memory*/
 	return (NULL);
-	else strcpy(str_dup, str);
-	return (str_dup);/*The original string is copied to duplicated string*/
 }
