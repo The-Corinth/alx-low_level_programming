@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		for (j = 0; argv[i][j]; j++)
 		{
 			if (isdigit(argv[i][j]))
-				num =  i + j;
+				num = i + j;
 			else
 			{
 				printf("Error\n");
