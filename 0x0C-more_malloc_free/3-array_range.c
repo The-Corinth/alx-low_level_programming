@@ -4,7 +4,7 @@
 /**
  * array_range - Creates an array of integers within a specified range.
  * @min: The minimum value to start the range.
- * @max: The maximum value to end the range (inclusive) and the number of elements.
+ * @max: The maximum value to end range (inclusive) and number of elements.
  *
  * Return: A pointer to the new integer array, or NULL on failure.
  */
