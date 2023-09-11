@@ -8,7 +8,8 @@
  * @age: Age to initialize
  * @owner: Owner to initialize
  *
- * Description: This function initializes a variable of type struct dog with the
+ * Description: This function initializes
+ * a variable of type struct dog with the
  * provided name, age, and owner.
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
