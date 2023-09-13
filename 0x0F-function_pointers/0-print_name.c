@@ -1,36 +1,17 @@
-#include <stddef.h>
-#include <stdlib.h>
 #include "function_pointers.h"
+#include <stdio.h>
 
 /**
- * print_name - function that prints a name
- * @f: a function pointer
- * @name: parameter taken by print_name function
- * Return: void
+ * print_name - Prints a name using a pointer to a function
+ * @name: The string to print
+ * @f: The pointer to a function that prints a string
+ *
+ * Return: Nothing
  */
 void print_name(char *name, void (*f)(char *))
 {
-	int len = 0;
-	int i = 0;
-	char *buffer = (char *)malloc((len + 1) * sizeof(char));
+    if (name == NULL || f == NULL)
+        return;
 
-	while (name[len] != '\0')
-	{
-		len++;
-	}
-
-	if (buffer == NULL)
-	{
-		exit(1);
-	}
-
-	while (name[i] != '\0')
-	{
-		buffer[i] = name[i];
-		i++;
-	}
-	buffer[i] = '\0';
-	f(buffer);
-	free(buffer);
-	buffer = NULL;
+    f(name);
 }
