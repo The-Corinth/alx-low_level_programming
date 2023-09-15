@@ -11,19 +11,19 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list ap;          
+	va_list ap;
 	/* Declare a va_list variable to work with variadic arguments */
 	unsigned int i;
 	int sum = 0;
 
-	va_start(ap, n);    
-       	/* Initialize the va_list with the number of parameters */
+	va_start(ap, n);
+	/* Initialize the va_list with the number of parameters */
 
 	for (i = 0; i < n; i++)
-		sum += va_arg(ap, int); 
-       	/* Access and add each parameter using va_arg */
+		sum += va_arg(ap, int);
+	/* Access and add each parameter using va_arg */
 
-	va_end(ap);           /* Clean up the va_list */
+	va_end(ap);/* Clean up the va_list */
 
 	return (sum);
 }
